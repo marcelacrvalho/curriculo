@@ -7,4 +7,8 @@ class HomeController extends GetxController {
   toCourseView() {
     Get.toNamed(Routes.kCourse);
   }
+
+  toAppView() {
+    return Get.toNamed(Routes.kApps);
+  }
 }

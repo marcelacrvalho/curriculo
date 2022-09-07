@@ -36,7 +36,7 @@ class HomeView extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: HomeController.to.toCourseView,
+                    onTap: HomeController.to.toAppView,
                     child: const CustomIconWidget(
                       'assets/images/text.png',
                       'Aplicativos',
@@ -50,7 +50,7 @@ class HomeView extends StatelessWidget {
                     ),
                   ),
                 ],
-              )
+              ),
             ],
           ),
           Container(
