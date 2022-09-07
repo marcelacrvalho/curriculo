@@ -11,4 +11,8 @@ class HomeController extends GetxController {
   toAppView() {
     return Get.toNamed(Routes.kApps);
   }
+
+  toExperienceView() {
+    return Get.toNamed(Routes.kExperience);
+  }
 }

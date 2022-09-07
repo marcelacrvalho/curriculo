@@ -2,10 +2,12 @@ import 'package:curriculo/app/module/app/bindings/app_bindings.dart';
 import 'package:curriculo/app/module/app/views/app_view.dart';
 import 'package:curriculo/app/module/course/bindings/course_bindings.dart';
 import 'package:curriculo/app/module/course/views/course_view.dart';
+import 'package:curriculo/app/module/experience/bindings/experience_bindings.dart';
 import 'package:curriculo/app/module/home/bindings/home_bindings.dart';
 import 'package:curriculo/app/module/home/views/home_view.dart';
 import 'package:curriculo/app/routes/app_routes.dart';
 import 'package:get/get.dart';
+import '../module/experience/views/experience_view.dart';
 
 class AppPages {
   static final routes = [
@@ -23,6 +25,11 @@ class AppPages {
       name: Routes.kApps,
       page: () => const AppsView(),
       binding: AppsBinding(),
+    ),
+    GetPage(
+      name: Routes.kExperience,
+      page: () => const ExperienceView(),
+      binding: ExperienceBinding(),
     ),
   ];
 }
